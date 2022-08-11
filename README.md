@@ -11,7 +11,7 @@ A palindrome is a word, number, phrase, or other sequence of characters which re
 A **simple loop** seems to be the best solution in terms of performance:
 
 ``` csharp
-public bool IsPalindromLoop(string input)
+public bool IsPalindromeLoop(string input)
 {
     if (string.IsNullOrWhiteSpace(input))
     {
