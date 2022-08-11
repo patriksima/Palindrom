@@ -8,6 +8,32 @@ A palindrome is a word, number, phrase, or other sequence of characters which re
 2) **LoopTest** method uses loop for a index
 3) **SpanTest** method uses unsafe context, readonly span and pointers in while loop
 
+A **simple loop** seems to be the best solution in terms of performance:
+
+``` csharp
+public bool IsPalindromLoop(string input)
+{
+    if (string.IsNullOrWhiteSpace(input))
+    {
+        return true;
+    }
+
+    var j = input.Length - 1;
+
+    for (var i = 0; i < input.Length / 2; i++)
+    {
+        var left = input[i];
+        var right = input[j - i];
+        if (char.ToLowerInvariant(left) != char.ToLowerInvariant(right))
+        {
+            return false;
+        }
+    }
+
+    return true;
+}
+```
+
 ``` ini
 
 BenchmarkDotNet=v0.13.1, OS=Windows 10.0.22000
