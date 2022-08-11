@@ -1,6 +1,6 @@
-namespace PalindromTests;
+namespace PalindromeTests;
 
-public class PalindromTests
+public class PalindromeTests
 {
     [SetUp]
     public void Setup()
@@ -20,7 +20,7 @@ public class PalindromTests
     [TestCase("1+ěščřžýáíéÉÍÁÝŽŘČŠĚ+11+ěščřžýáíéÉÍÁÝŽŘČŠĚ+11+ěščřžýáíéÉÍÁÝŽŘČŠĚ+11+ěščřžýáíéÉÍÁÝŽŘČŠĚ+1", ExpectedResult = true)]
     public bool ReverseTest(string input)
     {
-        return Palindrom.Palindrom.IsPalindromReverse(input);
+        return Palindrome.Palindrome.IsPalindromReverse(input);
     }
 
     [TestCase("", ExpectedResult = true)]
@@ -36,7 +36,7 @@ public class PalindromTests
     [TestCase("1+ěščřžýáíéÉÍÁÝŽŘČŠĚ+11+ěščřžýáíéÉÍÁÝŽŘČŠĚ+11+ěščřžýáíéÉÍÁÝŽŘČŠĚ+11+ěščřžýáíéÉÍÁÝŽŘČŠĚ+1", ExpectedResult = true)]
     public bool LoopTest(string input)
     {
-        return Palindrom.Palindrom.IsPalindromLoop(input);
+        return Palindrome.Palindrome.IsPalindromLoop(input);
     }
 
     [TestCase("", ExpectedResult = true)]
@@ -52,6 +52,6 @@ public class PalindromTests
     [TestCase("1+ěščřžýáíéÉÍÁÝŽŘČŠĚ+11+ěščřžýáíéÉÍÁÝŽŘČŠĚ+11+ěščřžýáíéÉÍÁÝŽŘČŠĚ+11+ěščřžýáíéÉÍÁÝŽŘČŠĚ+1", ExpectedResult = true)]
     public bool SpanTest(string input)
     {
-        return Palindrom.Palindrom.IsPalindromSpan(input);
+        return Palindrome.Palindrome.IsPalindromSpan(input);
     }
 }

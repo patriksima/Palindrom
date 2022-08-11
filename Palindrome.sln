@@ -1,8 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Palindrom", "Palindrom\Palindrom.csproj", "{C404F84C-7D6E-440C-9884-5448F0FF4249}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Palindrome", "Palindrome\Palindrome.csproj", "{C404F84C-7D6E-440C-9884-5448F0FF4249}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PalindromTests", "PalindromTests\PalindromTests.csproj", "{960C2D9D-E21B-4CBC-9C20-1C48882CB66A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PalindromeTests", "PalindromeTests\PalindromeTests.csproj", "{960C2D9D-E21B-4CBC-9C20-1C48882CB66A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -1,6 +1,6 @@
 ﻿using BenchmarkDotNet.Running;
-using Palindrom;
+using Palindrome;
 
-var summary = BenchmarkRunner.Run<PalindromBenchmark>();
+var summary = BenchmarkRunner.Run<PalindromeBenchmark>();
 
 Console.WriteLine(summary.Reports.Length);

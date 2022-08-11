@@ -1,6 +1,6 @@
-﻿namespace Palindrom;
+﻿namespace Palindrome;
 
-public static class Palindrom
+public static class Palindrome
 {
     public static bool IsPalindromReverse(string input)
     {

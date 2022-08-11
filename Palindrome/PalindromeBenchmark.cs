@@ -1,11 +1,11 @@
 ﻿using BenchmarkDotNet.Attributes;
 
-namespace Palindrom;
+namespace Palindrome;
 
 [MemoryDiagnoser]
 [ThreadingDiagnoser]
 [HtmlExporter, MarkdownExporter, CsvExporter]
-public class PalindromBenchmark
+public class PalindromeBenchmark
 {
     [Params("", "a", "ab", "aba", "Aba", "#1AzZa1#", "1+ěščřžýáíéÉÍÁÝŽŘČŠĚ+1")]
     public string Input { get; set; } = default!;
@@ -13,18 +13,18 @@ public class PalindromBenchmark
     [Benchmark]
     public bool ReverseTest()
     {
-        return Palindrom.IsPalindromReverse(Input);
+        return Palindrome.IsPalindromReverse(Input);
     }
     
     [Benchmark]
     public bool LoopTest()
     {
-        return Palindrom.IsPalindromLoop(Input);
+        return Palindrome.IsPalindromLoop(Input);
     }
     
     [Benchmark]
     public bool SpanTest()
     {
-        return Palindrom.IsPalindromSpan(Input);
+        return Palindrome.IsPalindromSpan(Input);
     }
 }
